@@ -81,7 +81,7 @@ export function About() {
                 <img src={profileImg} alt="Ear Sokchan" loading="lazy" className="relative w-full h-auto" />
                 <div className="cr-sticker cr-float -right-4 top-6 w-28 h-28">
                   <svg viewBox="0 0 136 134" className="cr-spin" fill="#C2EC40"><path d={STAR} /></svg>
-                  <p>RUPP<br />graduate</p>
+                  <p>BBU<br />graduate</p>
                 </div>
                 <span className="absolute -left-2 bottom-16 cr-accent text-3xl text-[var(--cr-lime)] -rotate-12 drop-shadow">
                   that's me!
@@ -101,8 +101,7 @@ export function About() {
                   Clean in form. <span className="cr-accent">Sharp</span> in function.
                 </p>
                 <p>
-                  I'm <strong className="text-[var(--cr-ink)]">Sokchan</strong>, a Computer Science graduate from the Royal
-                  University of Phnom Penh. Responsible, organized and hardworking — eager to keep learning and ship
+                  I'm <strong className="text-[var(--cr-ink)]">Sokhy</strong>, a Computer Science graduate from the Build Bright University Responsible, organized and hardworking — eager to keep learning and ship
                   things people actually use.
                 </p>
                 <p>

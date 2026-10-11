@@ -1,7 +1,7 @@
 import { motion, useInView, Variants } from 'motion/react';
 import { useRef } from 'react';
 import { Code, Palette, Zap, Briefcase, GraduationCap, ArrowUpRight } from 'lucide-react';
-import profileImg from '../../assets/sokchan_profile.png';
+import profileImg from '../../assets/Keiyy.png';
 
 const ease = [0.22, 1, 0.36, 1] as const;
 

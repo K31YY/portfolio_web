@@ -105,12 +105,12 @@ export function About() {
                   things people actually use.
                 </p>
                 <p>
-                  Currently a Junior Developer at{' '}
-                  <a href="https://tsdsolution.com/" target="_blank" rel="noopener noreferrer"
+                  Currently a Associate Project at{' '}
+                  <a href="https://www.digitaldividedata.com/" target="_blank" rel="noopener noreferrer"
                     className="font-semibold text-[var(--cr-ink)] underline decoration-[var(--cr-pink)] decoration-2 underline-offset-4">
-                    Technology Solution Development (TSD)
+                    Digital Divide Data (DDD)
                   </a>
-                  , Cambodia's leading software company serving businesses nationwide.
+                  , Cambodia's AI Data Solutions Powered by Human Intelligence.
                 </p>
               </motion.div>
 

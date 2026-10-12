@@ -90,20 +90,20 @@ ${formData.message}
     {
       icon: Mail,
       title: 'Email',
-      value: 'sokchanear0@gmail.com',
-      href: 'mailto:sokchanear0@gmail.com',
+      value: 'khoeurtsokhy@gmail.com',
+      href: 'mailto:khoeurtsokhy@gmail.com',
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '096 588 1722',
-      href: 'tel:0965881722',
+      value: '067 9169 88',
+      href: 'tel:067 9169 88',
     },
     {
       icon: Send,
       title: 'Telegram',
-      value: '@earsokchan',
-      href: 'https://t.me/earsokchan',
+      value: '@Keiyy_k',
+      href: 'https://t.me/Keiyy_k',
     },
     {
       icon: MapPin,
@@ -240,7 +240,7 @@ ${formData.message}
 
         {/* Footer */}
         <div className="mt-28 pt-8 border-t border-black/10 text-center text-xs font-medium text-black/50">
-          <p>© 2026 Sokchan. All rights reserved.</p>
+          <p>© 2026 Sokhy. All rights reserved.</p>
         </div>
       </div>
     </section>

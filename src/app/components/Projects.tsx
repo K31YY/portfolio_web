@@ -4,16 +4,16 @@ import { ArrowUpRight, Globe, X, Github, Code2, FolderGit2 } from 'lucide-react'
 import { GithubContributions } from './GithubContributions';
 
 // Poster Showcase Imports
-import builwareAdminPoster from '../../assets/builware_admin_poster.png';
-import gssCambodiaPoster from '../../assets/gss_cambodia_poster.png';
-import builwarePosPoster from '../../assets/builware_pos_poster.png';
-import schoolManagementPoster from '../../assets/school_management_poster.png';
-import targetStorePoster from '../../assets/target_store_poster.png';
-import bantobchuolPoster from '../../assets/bantobchuol_poster.png';
-import kottraKangeaPoster from '../../assets/kottrakangea_poster.png';
-import theLittleCafePoster from '../../assets/thelittlacafe_poster.png';
-import dlSystemPoster from '../../assets/dl_system_poster.png';
-import portfolioPoster from '../../assets/portfolio_poster.png';
+import builwareAdminPoster from '../../assets/admin_1.png';
+import gssCambodiaPoster from '../../assets/admin_2.png';
+import builwarePosPoster from '../../assets/admin_3.png';
+import schoolManagementPoster from '../../assets/admin_4.png';
+import targetStorePoster from '../../assets/banthobjul.png';
+import bantobchuolPoster from '../../assets/builware.png';
+// import kottraKangeaPoster from '../../assets/kottrakangea_poster.png';
+// import theLittleCafePoster from '../../assets/thelittlacafe_poster.png';
+// import dlSystemPoster from '../../assets/dl_system_poster.png';
+// import portfolioPoster from '../../assets/portfolio_poster.png';
 
 export type PersonalProject = {
   id: string;
@@ -122,49 +122,49 @@ const mainProjects: PersonalProject[] = [
     image: bantobchuolPoster,
     tags: ['React.js', 'Express', 'MongoDB', 'i18n', 'Node.js'],
   },
-  {
-    id: 'kottrakangea',
-    category: 'Developer Productivity SaaS',
-    title: 'KottraKangea',
-    description:
-      'Task tracking and productivity tool streamlining sprint planning, assignments, code review workflows and timelines.',
-    highlights: ['Kanban & sprint task boards', 'Real-time team activity metrics'],
-    url: 'https://kottrakangea.builware.app/',
-    image: kottraKangeaPoster,
-    tags: ['Next.js', 'React.js', 'Node.js', 'MongoDB'],
-  },
-  {
-    id: 'dl-system',
-    category: 'Warehouse & Inventory',
-    title: 'DL-System Ice Warehouse',
-    description:
-      'Ice plant supply chain and warehouse system managing distribution routes, customer credit tracking and stock movement logs.',
-    highlights: ['Daily production & delivery logs', 'Customer credit & balance tracker'],
-    image: dlSystemPoster,
-    tags: ['Laravel', 'MySQL', 'Bootstrap', 'Chart.js'],
-  },
-  {
-    id: 'little-cafe',
-    category: 'Digital Cafe Menu',
-    title: 'The Little Cafe',
-    description:
-      'Mobile-first digital menu for food & beverage ordering with instant category filtering and QR table scanning.',
-    highlights: ['Touch-optimized menu experience', 'Instant category filter & search'],
-    url: 'https://thelittlecafe.vercel.app/',
-    image: theLittleCafePoster,
-    tags: ['React.js', 'Next.js', 'Tailwind CSS', 'Vercel'],
-  },
-  {
-    id: 'portfolio-source',
-    category: 'Free Open Source Portfolio',
-    title: 'Developer Portfolio',
-    description:
-      'The complete open-source code for this personal developer portfolio. Features smooth animations, dynamic project fetching, and modern React practices.',
-    highlights: ['Modern UI with Motion animations', 'Reusable React components & modular structure'],
-    url: 'https://github.com/earsokchan/Portfolio',
-    image: portfolioPoster,
-    tags: ['React.js', 'TypeScript', 'Tailwind CSS', 'Motion'],
-  },
+  // {
+  //   id: 'kottrakangea',
+  //   category: 'Developer Productivity SaaS',
+  //   title: 'KottraKangea',
+  //   description:
+  //     'Task tracking and productivity tool streamlining sprint planning, assignments, code review workflows and timelines.',
+  //   highlights: ['Kanban & sprint task boards', 'Real-time team activity metrics'],
+  //   url: 'https://kottrakangea.builware.app/',
+  //   image: kottraKangeaPoster,
+  //   tags: ['Next.js', 'React.js', 'Node.js', 'MongoDB'],
+  // },
+  // {
+  //   id: 'dl-system',
+  //   category: 'Warehouse & Inventory',
+  //   title: 'DL-System Ice Warehouse',
+  //   description:
+  //     'Ice plant supply chain and warehouse system managing distribution routes, customer credit tracking and stock movement logs.',
+  //   highlights: ['Daily production & delivery logs', 'Customer credit & balance tracker'],
+  //   image: dlSystemPoster,
+  //   tags: ['Laravel', 'MySQL', 'Bootstrap', 'Chart.js'],
+  // },
+  // {
+  //   id: 'little-cafe',
+  //   category: 'Digital Cafe Menu',
+  //   title: 'The Little Cafe',
+  //   description:
+  //     'Mobile-first digital menu for food & beverage ordering with instant category filtering and QR table scanning.',
+  //   highlights: ['Touch-optimized menu experience', 'Instant category filter & search'],
+  //   url: 'https://thelittlecafe.vercel.app/',
+  //   image: theLittleCafePoster,
+  //   tags: ['React.js', 'Next.js', 'Tailwind CSS', 'Vercel'],
+  // },
+  // {
+  //   id: 'portfolio-source',
+  //   category: 'Free Open Source Portfolio',
+  //   title: 'Developer Portfolio',
+  //   description:
+  //     'The complete open-source code for this personal developer portfolio. Features smooth animations, dynamic project fetching, and modern React practices.',
+  //   highlights: ['Modern UI with Motion animations', 'Reusable React components & modular structure'],
+  //   url: 'https://github.com/earsokchan/Portfolio',
+  //   image: portfolioPoster,
+  //   tags: ['React.js', 'TypeScript', 'Tailwind CSS', 'Motion'],
+  // },
 ];
 
 // DEDICATED SEPARATE OPEN SOURCE & FREE SOURCE CODE PROJECTS

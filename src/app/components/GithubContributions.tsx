@@ -43,36 +43,36 @@ interface RealGithubRepo {
   homepage?: string | null;
 }
 
-// Fallback curated live repositories for @earsokchan
+// Fallback curated live repositories for @khoeurtsokhy
 const fallbackRepos: RealGithubRepo[] = [
-  {
-    id: 'school-portal',
-    name: 'School-Management-System-Dynamic-School-Website',
-    full_name: 'earsokchan/School-Management-System-Dynamic-School-Website',
-    html_url: 'https://github.com/earsokchan/School-Management-System-Dynamic-School-Website',
-    description:
-      'Open-source dynamic school management portal featuring bilingual Khmer / English (i18n), student grade transcript generation, and an administrative portal.',
-    language: 'TypeScript',
-    langColor: '#3178C6',
-    stargazers_count: 0,
-    forks_count: 0,
-    topics: ['nextjs', 'mongodb', 'i18n', 'education'],
-    homepage: 'https://sms.builware.app/en',
-  },
-  {
-    id: 'portfolio-repo',
-    name: 'Ear-Sokchan-Portfolio',
-    full_name: 'earsokchan/Ear-Sokchan-Portfolio',
-    html_url: 'https://github.com/earsokchan',
-    description:
-      'Personal web developer portfolio showcase built with React, Motion and Tailwind CSS, styled after a modern creative agency aesthetic.',
-    language: 'TypeScript',
-    langColor: '#3178C6',
-    stargazers_count: 0,
-    forks_count: 0,
-    topics: ['portfolio', 'react', 'tailwindcss', 'vite'],
-    homepage: null,
-  },
+  // {
+  //   id: 'school-portal',
+  //   name: 'School-Management-System-Dynamic-School-Website',
+  //   full_name: 'earsokchan/School-Management-System-Dynamic-School-Website',
+  //   html_url: 'https://github.com/earsokchan/School-Management-System-Dynamic-School-Website',
+  //   description:
+  //     'Open-source dynamic school management portal featuring bilingual Khmer / English (i18n), student grade transcript generation, and an administrative portal.',
+  //   language: 'TypeScript',
+  //   langColor: '#3178C6',
+  //   stargazers_count: 0,
+  //   forks_count: 0,
+  //   topics: ['nextjs', 'mongodb', 'i18n', 'education'],
+  //   homepage: 'https://sms.builware.app/en',
+  // },
+  // {
+  //   id: 'portfolio-repo',
+  //   name: 'Ear-Sokchan-Portfolio',
+  //   full_name: 'earsokchan/Ear-Sokchan-Portfolio',
+  //   html_url: 'https://github.com/earsokchan',
+  //   description:
+  //     'Personal web developer portfolio showcase built with React, Motion and Tailwind CSS, styled after a modern creative agency aesthetic.',
+  //   language: 'TypeScript',
+  //   langColor: '#3178C6',
+  //   stargazers_count: 0,
+  //   forks_count: 0,
+  //   topics: ['portfolio', 'react', 'tailwindcss', 'vite'],
+  //   homepage: null,
+  // },
 ];
 
 // Generate realistic contribution matrix matching user screenshot
@@ -134,16 +134,16 @@ export function GithubContributions() {
   const [liveRepos, setLiveRepos] = useState<RealGithubRepo[]>(fallbackRepos);
   const [publicRepoCount, setPublicRepoCount] = useState<number | null>(null);
 
-  // Fetch live repos + profile counters directly from GitHub API for user @earsokchan
+  // Fetch live repos + profile counters directly from GitHub API for user @K31YY
   useEffect(() => {
-    fetch('https://api.github.com/users/earsokchan')
+    fetch('https://api.github.com/users/K31YY')
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
         if (data && typeof data.public_repos === 'number') setPublicRepoCount(data.public_repos);
       })
       .catch(() => { });
 
-    fetch('https://api.github.com/users/earsokchan/repos?sort=updated&per_page=6')
+    fetch('https://api.github.com/users/K31YY/repos?sort=updated&per_page=6')
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
         if (Array.isArray(data) && data.length > 0) {
@@ -154,7 +154,7 @@ export function GithubContributions() {
               name: item.name,
               full_name: item.full_name,
               html_url: item.html_url,
-              description: item.description || 'Public GitHub repository by Ear Sokchan.',
+              description: item.description || 'Public GitHub repository by Khoeurt Sokhy.',
               language: item.language || 'TypeScript',
               langColor: LANG_COLORS[item.language] || '#3178C6',
               stargazers_count: item.stargazers_count ?? 0,
@@ -189,18 +189,18 @@ export function GithubContributions() {
                 </span>
               </div>
               <p className="text-xs sm:text-sm text-white/60">
-                Public commit history & open-source activity for <span className="text-[var(--cr-lime)] font-mono font-bold">@earsokchan</span>
+                Public commit history & open-source activity for <span className="text-[var(--cr-lime)] font-mono font-bold">@khoeurtsokhy</span>
               </p>
             </div>
           </div>
 
           <a
-            href="https://github.com/earsokchan"
+            href="https://github.com/K31YY"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl bg-[var(--cr-lime)] text-[var(--cr-ink)] font-bold text-xs hover:scale-105 transition-transform shrink-0 shadow-lg"
           >
-            <Github size={16} /> Visit github.com/earsokchan <ExternalLink size={14} />
+            <Github size={16} /> Visit github.com/khoeurtsokhy <ExternalLink size={14} />
           </a>
         </div>
 
@@ -312,7 +312,7 @@ export function GithubContributions() {
                 viewport={{ once: true }}
                 className="cr-subtitle mb-5"
               >
-                Live Repositories on github.com/earsokchan
+                Live Repositories on github.com/khoeurtsokhy
               </motion.p>
 
               <h4 className="cr-display text-white text-5xl sm:text-7xl lg:text-[6.5rem]">
@@ -337,12 +337,12 @@ export function GithubContributions() {
                 className="text-sm sm:text-base text-white/70 max-w-xl leading-relaxed mt-5"
               >
                 Public codebases pulled live from GitHub — updated the moment a commit lands on
-                <span className="text-[var(--cr-lime)] font-semibold"> @earsokchan</span>.
+                <span className="text-[var(--cr-lime)] font-semibold"> @khoeurtsokhy</span>.
               </motion.p>
             </div>
 
             <a
-              href="https://github.com/earsokchan?tab=repositories"
+              href="https://github.com/K31YY?tab=repositories"
               target="_blank"
               rel="noopener noreferrer"
               className="cr-btn shrink-0 self-start lg:self-auto"
@@ -430,12 +430,12 @@ export function GithubContributions() {
             </p>
 
             <a
-              href="https://github.com/earsokchan"
+              href="https://github.com/K31YY"
               target="_blank"
               rel="noopener noreferrer"
               className="cr-btn cr-btn--ghost"
             >
-              github.com/earsokchan <ExternalLink size={15} />
+              github.com/khoeurtsokhy <ExternalLink size={15} />
             </a>
           </div>
         </div>

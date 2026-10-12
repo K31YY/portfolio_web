@@ -61,7 +61,7 @@ export function Navigation() {
               className="cr-display text-2xl text-white leading-none tracking-wide"
               aria-label="Home"
             >
-              sok<span className="cr-accent text-[var(--cr-lime)]">c</span>han
+              so<span className="cr-accent text-[var(--cr-lime)]">k</span>hy
             </button>
 
             <ul className="hidden md:flex items-center gap-7">

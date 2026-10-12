@@ -126,7 +126,7 @@ export function Hero() {
             className="lg:col-span-6 pb-16"
           >
             <p className="text-lg sm:text-xl text-white/75 leading-relaxed max-w-xl">
-              Hi, I'm <span className="text-white font-semibold">Khoeurt Sokhy</span> — Junior Developer at TSD Co., Ltd.
+              Hi, I'm <span className="text-white font-semibold">Khoeurt Sokhy</span> — Associate Project at DDD Co., Ltd.
               and Computer Science graduate from . I design and ship SaaS platforms, POS systems and
               e-commerce stores that are <span className="cr-highlight font-semibold">clean in form, sharp in function.</span>
             </p>
@@ -144,9 +144,9 @@ export function Hero() {
 
             <div className="flex items-center gap-6 mt-10">
               {[
-                { icon: Github, href: 'https://github.com', label: 'GitHub' },
+                { icon: Github, href: 'https://github.com/K31YY', label: 'GitHub' },
                 { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-                { icon: Mail, href: 'mailto:contact@example.com', label: 'Email' },
+                { icon: Mail, href: 'mailto:khoeurtsokhy@gmail.com', label: 'Email' },
               ].map(({ icon: Icon, href, label }) => (
                 <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={label}
                   className="w-11 h-11 grid place-items-center rounded-full border border-white/20 text-white hover:bg-[var(--cr-lime)] hover:text-[var(--cr-ink)] hover:border-transparent transition-colors">

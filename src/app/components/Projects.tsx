@@ -4,7 +4,7 @@ import { ArrowUpRight, Globe, X, Github, Code2, FolderGit2 } from 'lucide-react'
 import { GithubContributions } from './GithubContributions';
 
 // Poster Showcase Imports
-import builwareAdminPoster from '../../assets/admin_1.png';
+import Tesla3D from '../../assets/3Dtesla.jpeg';
 import gssCambodiaPoster from '../../assets/admin_2.png';
 import builwarePosPoster from '../../assets/admin_3.png';
 import schoolManagementPoster from '../../assets/admin_4.png';
@@ -47,7 +47,7 @@ const ACCENTS = ['#C2EC40', '#F04C8A', '#104EFF', '#E1611C', '#D3C5F6', '#EA3323
 const featuredProjects: PersonalProject[] = [
   {
     id: 'builware-saas',
-    category: 'E-Commerce SaaS Platform',
+    category: '3D Tesla Mobile Application',
     title: 'Builware Platform',
     description:
       'A multi-store e-commerce & inventory SaaS ecosystem empowering businesses with real-time analytics, automated order fulfillment, and ABA PayWay / Bakong KHQR integration.',
@@ -57,7 +57,7 @@ const featuredProjects: PersonalProject[] = [
       'Real-time sales, inventory & order tracking',
     ],
     url: 'https://www.builware.app/',
-    image: builwareAdminPoster,
+    image: Tesla3D,
     tags: ['Next.js', 'React.js', 'Node.js', 'MongoDB', 'ABA PayWay', 'Bakong KHQR'],
   },
   {
@@ -168,33 +168,33 @@ const mainProjects: PersonalProject[] = [
 ];
 
 // DEDICATED SEPARATE OPEN SOURCE & FREE SOURCE CODE PROJECTS
-const openSourceRepos: OpenSourceRepo[] = [
-  {
-    id: 'school-portal-cms',
-    title: 'School Management System Dynamic Website',
-    repoName: 'earsokchan/School-Management-System-Dynamic-School-Website',
-    description:
-      'Open-source dynamic school management portal software featuring bilingual Khmer / English (i18n), student grade transcript generation, and administrative portal.',
-    language: 'TypeScript',
-    langColor: '#3178C6',
-    license: 'MIT',
-    githubUrl: 'https://github.com/earsokchan/School-Management-System-Dynamic-School-Website',
-    demoUrl: 'https://sms.builware.app/en',
-    tags: ['Next.js', 'MongoDB', 'i18n', 'Education'],
-  },
-  {
-    id: 'developer-portfolio',
-    title: 'Developer Portfolio Source Code',
-    repoName: 'earsokchan/Portfolio',
-    description:
-      'Open-source repository for my personal developer portfolio featuring smooth scrolling, beautiful UI components, and fully responsive design built with React, Vite, and Tailwind CSS.',
-    language: 'TypeScript',
-    langColor: '#3178C6',
-    license: 'MIT',
-    githubUrl: 'https://github.com/earsokchan/Portfolio',
-    tags: ['React.js', 'Vite', 'Tailwind CSS', 'Portfolio'],
-  },
-];
+// const openSourceRepos: OpenSourceRepo[] = [
+//   {
+//     id: 'school-portal-cms',
+//     title: 'School Management System Dynamic Website',
+//     repoName: 'earsokchan/School-Management-System-Dynamic-School-Website',
+//     description:
+//       'Open-source dynamic school management portal software featuring bilingual Khmer / English (i18n), student grade transcript generation, and administrative portal.',
+//     language: 'TypeScript',
+//     langColor: '#3178C6',
+//     license: 'MIT',
+//     githubUrl: 'https://github.com/earsokchan/School-Management-System-Dynamic-School-Website',
+//     demoUrl: 'https://sms.builware.app/en',
+//     tags: ['Next.js', 'MongoDB', 'i18n', 'Education'],
+//   },
+//   {
+//     id: 'developer-portfolio',
+//     title: 'Developer Portfolio Source Code',
+//     repoName: 'earsokchan/Portfolio',
+//     description:
+//       'Open-source repository for my personal developer portfolio featuring smooth scrolling, beautiful UI components, and fully responsive design built with React, Vite, and Tailwind CSS.',
+//     language: 'TypeScript',
+//     langColor: '#3178C6',
+//     license: 'MIT',
+//     githubUrl: 'https://github.com/earsokchan/Portfolio',
+//     tags: ['React.js', 'Vite', 'Tailwind CSS', 'Portfolio'],
+//   },
+// ];
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -396,13 +396,13 @@ export function Projects() {
             </span>
           </h2>
 
-          <p className="text-lg sm:text-xl text-white/75 max-w-2xl leading-relaxed mt-4">
+          {/* <p className="text-lg sm:text-xl text-white/75 max-w-2xl leading-relaxed mt-4">
             Free, open-source repositories, SDK wrappers, and full-stack starter templates published on GitHub for the developer community.
-          </p>
+          </p> */}
         </div>
 
-        {/* Dedicated Grid of Open Source Code Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Dedicated Grid of Open Source Code Cards
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"> 
           {openSourceRepos.map((repo, idx) => (
             <motion.div
               key={repo.id}
@@ -414,7 +414,7 @@ export function Projects() {
               className="rounded-[24px] bg-[var(--cr-ink-2)] border border-white/15 p-6 sm:p-7 shadow-xl hover:border-[var(--cr-lime)] transition-colors flex flex-col justify-between group"
             >
               <div>
-                {/* Header Row: Folder Icon + Repo Badge */}
+                Header Row: Folder Icon + Repo Badge
                 <div className="flex items-center justify-between mb-4">
                   <div className="w-11 h-11 rounded-2xl bg-[var(--cr-lime)] text-[var(--cr-ink)] grid place-items-center font-bold shadow-md">
                     <FolderGit2 size={22} />
@@ -425,7 +425,7 @@ export function Projects() {
                   </span>
                 </div>
 
-                {/* Title & Description */}
+                Title & Description
                 <h3 className="cr-display text-2xl text-white mb-1 group-hover:text-[var(--cr-lime)] transition-colors">
                   {repo.title}
                 </h3>
@@ -434,7 +434,7 @@ export function Projects() {
               </div>
 
               <div>
-                {/* Tag Pills */}
+                Tag Pills
                 <div className="flex flex-wrap gap-1.5 mb-5">
                   {repo.tags.map((t) => (
                     <span key={t} className="px-2.5 py-1 rounded-lg text-[11px] font-medium bg-white/5 text-white/80 border border-white/10">
@@ -443,7 +443,7 @@ export function Projects() {
                   ))}
                 </div>
 
-                {/* Bottom Action Row (Language & Get Code) */}
+                Bottom Action Row (Language & Get Code)
                 <div className="flex items-center justify-between pt-4 border-t border-white/10">
                   <span className="inline-flex items-center gap-1.5 text-xs font-mono text-white/70">
                     <span className="w-2.5 h-2.5 rounded-full" style={{ background: repo.langColor }} />
@@ -462,7 +462,7 @@ export function Projects() {
               </div>
             </motion.div>
           ))}
-        </div>
+        </div> */}
 
         {/* GitHub Contributions Activity Heatmap Grid */}
         <div className="mt-14">

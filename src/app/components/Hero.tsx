@@ -52,14 +52,14 @@ export function Hero() {
           transition={{ duration: 0.6 }}
           className="cr-subtitle mb-6"
         >
-          Mobile-App developer · Phnom Penh
+          Full-Stack Developer · Phnom Penh
         </motion.p>
 
         {/* HEADLINE */}
         <h1 className="relative cr-display text-white text-[17vw] sm:text-[13vw] lg:text-[10.5rem] select-none">
           <span className="cr-line-mask">
             <motion.span custom={0} variants={line} initial="hidden" animate="show" className="block">
-              I build <span className="cr-accent text-[var(--cr-lime)]">m</span>obile application
+              I build <span className="cr-accent text-[var(--cr-lime)]">w</span>ebsite
             </motion.span>
           </span>
           <span className="cr-line-mask">

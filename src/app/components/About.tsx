@@ -48,7 +48,7 @@ export function About() {
   ];
 
   const experienceHistory = [
-    { period: '2026 — now', role: 'Associate Proejct', company: 'DDD Co., Ltd. (Digital Divide Data)', description: 'AI Data Solutions Powered by Human Intelligence. We transform the complex, real-world data into production-ready training and validation assets that accelerate the AI model performance, deployment, and long-term ROI', link: 'https://www.digitaldividedata.com/', type: 'work' as const },
+    { period: '2026 — now', role: 'AI Engineering', company: 'DDD Co., Ltd. (Digital Divide Data)', description: 'AI Data Solutions Powered by Human Intelligence. We transform the complex, real-world data into production-ready training and validation assets that accelerate the AI model performance, deployment, and long-term ROI', link: 'https://www.digitaldividedata.com/', type: 'work' as const },
     // { period: '2025 — 2026', role: 'Freelance Web Developer', company: 'Target Store Online Shop', description: 'Built the full-stack e-commerce platform targetclothe.com, including catalog, cart and KHQR payment integration.', type: 'work' as const },
     { period: '2022 — 2025', role: 'Computer Science Student', company: 'Build Bright University(BBU))', description: 'Bachelor of Computer Science covering software engineering, algorithms, and web technologies.', type: 'education' as const },
     { period: '2022 — 2024', role: 'Teacher', company: 'Kingdom School', description: 'Maintained a safe, secure, and structured learning environment by actively managing classroom entry and supervising student conduct.', link: 'https://www.gss.com.kh/', type: 'work' as const },

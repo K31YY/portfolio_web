@@ -609,7 +609,7 @@ export function Skills() {
                 className="relative flex items-stretch rounded-[28px] bg-[var(--cr-ink-2)] border border-[rgba(211,197,246,0.16)] overflow-hidden shadow-2xl hover:border-[var(--cr-lime)]/40 transition-all duration-500 group"
               >
                 {/* Agency Vertical Spine Header */}
-                <div className="flex justify-center items-center w-[46px] flex-none py-5 border-r border-white/5 bg-[var(--cr-ink-3)] hidden md:flex transition-colors group-hover:bg-[var(--cr-ink-2)]">
+                <div className="flex justify-center items-center w-[46px] flex-none py-5 border-r border-white/5 bg-[var(--cr-ink-3)] .hidden md:flex transition-colors group-hover:bg-[var(--cr-ink-2)]">
                   <span className="cr-spine text-white/30 group-hover:text-[var(--cr-lime)] group-hover:tracking-[0.26em]">
                     {category.code}
                   </span>
